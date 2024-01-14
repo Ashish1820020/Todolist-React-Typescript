@@ -1,38 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(90, 90, 230);
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+}
+
+.header{
+  font-family: 'Neucha', cursive;
+  font-size: 3rem;
   color: white;
+  font-weight: 900;
 }
 
-.App-link {
-  color: #61dafb;
+.input{
+  display: flex;
+  width: 50rem;
+  position: relative;
+  align-items: center;
+  margin: 2rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_box{
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  background-color: white;
+  transition: 2s all;
+  box-shadow: inset 0 0 5px black;
+}
+.input_box:focus{
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.199);
+}
+
+
+.input_submit{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0;
+  border: none;
+  font: 15px;
+  color: white;
+  background-color: rgb(90, 90, 230);
+  transition: .2s all;
+  box-shadow: 0 0 10px black;
+}
+.input_submit:hover{
+  background-color: rgba(90, 90, 230, 0.89);
 }

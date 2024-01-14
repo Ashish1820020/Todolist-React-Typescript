@@ -1,0 +1,49 @@
+
+.todos-container{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    width: 600px;
+    margin: 2rem auto;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    box-shadow: 0 0 .5rem black;
+    height: 4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: .8rem;
+    border-radius: 5px;
+}
+
+.todo_text{
+    background-color: transparent;
+}
+.todo_buttons_container{
+    display: flex;
+    gap: .8rem;
+    background-color: transparent;
+}
+.icon {
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon:hover {
+    background-color: yellow;
+}
+
+.icon svg{
+    background-color: transparent;
+    font-size: 1.8rem;
+}
+.icon svg:hover {
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.disable{
+    cursor: not-allowed;
+}
