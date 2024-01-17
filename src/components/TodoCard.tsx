@@ -51,12 +51,12 @@ const TodoCard = ({id, todo, isCompleted, handleCompleted, handleDelete, todos, 
           }}><MdModeEditOutline /></span>
         <span className="icon" onClick={() => handleDelete(id)}><MdDelete /></span>
         <span className= {edit? 'icon disable' : 'icon'} onClick={() => handleCompleted(id)}>
-          {
+          {/* {
             isCompleted?
             <MdCancel />
             :
             <MdOutlineDownloadDone />
-          }
+          } */}
           </span>
       </div>
     </form>
